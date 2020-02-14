@@ -1,0 +1,37 @@
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    padding-left: 2rem;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.jumbotron {
+    background-image: url("assets/3427394.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbotron-content {
+    background: rgba(255,255,255,0.75);
+    border: 1px solid #DAA520;
+    padding: 2rem;
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;   
+}
+
+@media only screen and (max-width: 600px) {
+    .jumbotron-content {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .jumbotron-content {
+        width: 100%;
+    }
+}
