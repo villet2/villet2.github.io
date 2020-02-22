@@ -1,3 +1,26 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    padding-bottom: 2rem;
+}
+
+.btn--gold {
+    background-color: #DAA520;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+.pretty-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.pretty-font--big {
+
+}
+
 .navbar-brand {
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
@@ -15,14 +38,56 @@
 }
 
 .jumbotron-content {
-    background: rgba(255,255,255,0.75);
+    background: rgba(255,255,255,0.85);
     border: 1px solid #DAA520;
-    padding: 2rem;
-    height: 300px;
-    width: 500px;
+    padding: 3rem;
+    width: 700px;
     margin: 0 auto;
     text-align: center;   
 }
+
+.spacer {
+    height: 150px;
+}
+
+.names {
+    font-size: 3rem;
+}
+
+.line {
+    border-right: 2px solid #DAA520;
+    height: 90%;
+    width: 50%;
+}
+
+.general {
+    height: 200px;
+}
+
+.location {
+    background-color: #e4f1e0;
+}
+
+.location__map {
+    width: 602px;
+    height: 452px;
+    margin: 0 auto;
+    border: 1px solid #DAA520;
+}
+
+.program {
+    height: 200px;
+}
+
+.menu {
+    height: 200px;
+    background-color: #f9ded8;
+}
+
+.section-header-row {
+    margin: 2rem 0;
+}
+
 
 @media only screen and (max-width: 600px) {
     .jumbotron-content {
