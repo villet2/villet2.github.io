@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 section {
     padding-bottom: 2rem;
 }
@@ -11,6 +15,10 @@ section {
     color: white;
     padding: 1rem 2rem;
     font-size: 1.25rem;
+}
+
+.btn--gold:hover {
+    background-color: rgb(230, 197, 114);
 }
 
 .pretty-font {
@@ -46,6 +54,14 @@ section {
     text-align: center;   
 }
 
+.jumbotron-content .smaller {
+    font-size: 1.5rem;
+}
+
+.jumbotron-content .smallest {
+    font-size: 1.25rem;
+}
+
 .spacer {
     height: 150px;
 }
@@ -58,10 +74,11 @@ section {
     border-right: 2px solid #DAA520;
     height: 90%;
     width: 50%;
+    margin: 2rem 0;
 }
 
 .general {
-    height: 200px;
+    height: 300px;
 }
 
 .location {
@@ -75,23 +92,101 @@ section {
     border: 1px solid #DAA520;
 }
 
+.location__map--small {
+    display: none;
+}
+
+.location__content {
+    margin-top: 3rem;
+    text-align: center;
+}
+
 .program {
     height: 200px;
 }
 
 .menu {
-    height: 200px;
+    height: 900px;
     background-color: #f9ded8;
+}
+
+.menu .outer-border {
+    height: 750px;
+    width: 550px;
+    border: 1px solid #DAA520;
+    margin: 0 auto;
+}
+
+.menu .inner-border {
+    height: 700px;
+    width: 500px;
+    border: 2px solid #DAA520;
+    margin: 20px auto 10px auto;
 }
 
 .section-header-row {
     margin: 2rem 0;
 }
 
+.gifts {
+    display: none;
+}
 
-@media only screen and (max-width: 600px) {
+.faq {
+    display: none;
+}
+
+.footer {
+    background-color: #DAA520;
+    font-size: 0.5rem;
+    height: 100px;
+}
+
+.footer a {
+    color: transparent;
+}
+
+.footer__names {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .jumbotron {
+        height: 85vh;
+    }
+
     .jumbotron-content {
         width: 90%;
+    }
+
+    .spacer {
+        height: 50px;
+    }
+
+    .general {
+        height: 100%;
+    }
+
+    .menu .outer-border {
+        width: 100%;
+    }
+
+    .menu .inner-border {
+        width: 95%;
+    }
+
+    .location__map {
+        display: none;
+    }
+
+    .location__map--small {
+        display: block;
+    }
+
+    .nav-item {
+        text-align: center;
     }
 }
 

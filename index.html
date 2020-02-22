@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <!-- Required meta tags -->
@@ -28,16 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav w-100 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Paikka</a>
+                        <a class="nav-link" href="#location">Paikka</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ohjelma</a>
+                        <a class="nav-link" href="#program">Ohjelma</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lisätietoja</a>
+                        <a class="nav-link" href="#menu">Menu</a>
                     </li>
                 </ul>
             </div>
@@ -48,31 +45,32 @@
         <section class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="jumbotron-content">
-                    <h2>Tervetuloa!</h2>
+                    <h2 class="smaller">Tervetuloa!</h2>
                     <h1>
                         <p class="pretty-font names">
                             Sallan ja Villen
                         </p>
-                        <p class="lead">
+                        <p class="lead smaller">
                             hääjuhlaan
                         </p>
                     </h1>
                     <div class="spacer">
                         <div class="line"></div>
                     </div>
-                    <p class="lead">
-                        18.7.2020 Helsingissä
+                    <p class="lead smaller mt-4 mb-4">
+                        <span>18. heinäkuuta 2020</span><br />
+                        <span class="smallest">Villa Andania, Helsinki</span>
                     </p>
                     <p class="lead">
-                        <button class="btn btn--gold">
+                        <a href="#general" class="btn btn--gold">
                             Lisätietoja
-                        </button>
+                        </a>
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="general">
+        <section id="general" class="general">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center section-header-row">
@@ -96,7 +94,7 @@
             </div>
         </section>
 
-        <section class="location">
+        <section id="location" class="location">
             <div class="container">
                 <div class="row">
                     <div class="col-12 section-header-row">
@@ -110,9 +108,12 @@
                         <div class="location__map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.5041402486124!2d25.14744225188344!3d60.18893938187935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920e55cb983ad7%3A0xb20306d0ef1af2a1!2sVilla%20Andania!5e0!3m2!1sen!2sfi!4v1582376871115!5m2!1sen!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
+                        <div class="location__map--small">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7934.01655661501!2d25.1496363!3d60.1889394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb20306d0ef1af2a1!2sVilla%20Andania!5e0!3m2!1sen!2sfi!4v1582385739825!5m2!1sen!2sfi" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row location__content">
                     <div class="col-md-6 location__arriving mt-4">
                         <h5>Saapuminen</h5>
                         <p>
@@ -132,35 +133,42 @@
             </div>
         </section>
 
-        <section class="program">
+        <section id="program" class="program">
             <div class="container">
                 <div class="row">
                     <div class="col-12 section-header-row">
-                        <h2 class="pretty-font">
+                        <h2 class="pretty-font text-center">
                             Ohjelma
                         </h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p>Ohjelma tarkentuu lähiaikoina</p>
+                        <p class="text-center">Ohjelma tarkentuu lähiaikoina</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="menu">
+        <section id="menu" class="menu">
             <div class="container">
                 <div class="row">
                     <div class="col-12 section-header-row">
-                        <h2 class="pretty-font">
+                        <h2 class="pretty-font text-center">
                             Menu
                         </h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p>Menu tarkentuu lähiaikoina</p>
+                        <div class="outer-border">
+                            <div class="inner-border">
+                                <div class="menu__list text-center mt-4">
+                                    <h4>Menu</h4>
+                                    <p>Tulossa..</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,7 +183,8 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+        <p class="pretty-font text-center footer__names">Salla ja Ville</p>
         <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>
     </footer>
     <!--<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>-->
