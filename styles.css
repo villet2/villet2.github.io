@@ -17,6 +17,10 @@ section {
     font-size: 1.25rem;
 }
 
+.underline-header {
+    border-bottom: 1px solid black;
+}
+
 .btn--gold:hover {
     background-color: rgb(230, 197, 114);
 }
@@ -25,8 +29,8 @@ section {
     font-family: 'Dancing Script', cursive;
 }
 
-.pretty-font--big {
-
+.navbar-nav {
+    padding-right: 2rem;
 }
 
 .navbar-brand {
@@ -46,7 +50,7 @@ section {
 }
 
 .jumbotron-content {
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.9);
     border: 1px solid #DAA520;
     padding: 3rem;
     width: 700px;
@@ -78,7 +82,26 @@ section {
 }
 
 .general {
-    height: 300px;
+    height: 100%;
+}
+
+.general__rsvp {
+    margin-bottom: 3rem;
+}
+
+.general .general__rsvp p {
+    margin-bottom: 0.3rem;
+}
+
+.general p {
+    margin-bottom: 0;
+}
+
+.general .fa-map-signs,
+.general .fa-calendar-alt,
+.general .fa-envelope {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .location {
@@ -102,7 +125,7 @@ section {
 }
 
 .program {
-    height: 200px;
+    height: 100%;
 }
 
 .menu {
@@ -128,8 +151,28 @@ section {
     margin: 2rem 0;
 }
 
+.dress-code {
+    height: 300px;
+    background-image: url("assets/2902348.jpg");
+    background-size: cover;
+}
+
+.dress-code__content {
+    padding: 2rem;
+    margin: 0 auto;
+    width: 70%;
+    background: rgba(255,255,255,0.9);
+    position: relative;
+    top: 2rem;
+}
+
+.dress-code__text {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 .gifts {
-    display: none;
+    height: 100%;
 }
 
 .faq {
@@ -187,6 +230,18 @@ section {
 
     .nav-item {
         text-align: center;
+    }
+
+    .general__when {
+        margin-top: 3rem;
+    }
+
+    .dress-code__content {
+        width: 90%;
+    }
+
+    .navbar-nav {
+        padding-right: 0;
     }
 }
 
