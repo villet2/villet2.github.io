@@ -46,7 +46,7 @@ section {
 .jumbotron {
     background-image: url("assets/3427394.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
 }
 
 .jumbotron-content {
@@ -67,7 +67,7 @@ section {
 }
 
 .spacer {
-    height: 150px;
+    height: 70px;
 }
 
 .names {
@@ -75,7 +75,7 @@ section {
 }
 
 .line {
-    border-right: 2px solid #DAA520;
+    border-right: 1px solid #DAA520;
     height: 90%;
     width: 50%;
     margin: 2rem 0;
@@ -90,7 +90,7 @@ section {
 }
 
 .general .general__rsvp p {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .general p {
@@ -121,7 +121,11 @@ section {
 
 .location__content {
     margin-top: 3rem;
-    text-align: center;
+    text-align: left;
+}
+
+.location__content h5{
+    text-decoration: underline;
 }
 
 .program {
@@ -197,7 +201,7 @@ section {
 
 @media only screen and (max-width: 768px) {
     .jumbotron {
-        height: 85vh;
+        height: 100%;
     }
 
     .jumbotron-content {
